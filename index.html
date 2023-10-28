@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<!--Кодировка-->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!--Адаптивность-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<!--Отключает создание ссылки у номера телефона на базе IOS-->
+	<meta name="format-detection" content="telephone=no">
+
+	<!--мета-теги для CEO-->
+	<!--Краткое описание страницы-->
+	<meta name="description" content="Пустой шаблон">
+	<!--Ключевые слова-->
+	<meta name="keywords" content="keywords">
+	<!--Доступ поисковых роботов к странице-->
+	<meta name="robots" content="none">
+	<!--
+		none - полный запрет индексации страницы
+		noindex - запрет индексации содержимого страницы
+		nofollow - игнорировать ссылки в пределах веб-страницы
+		noimageindex - запрет индексаци изображений на транице
+		noarchive - запрет на вывод в результатах поиска ссылки "Сохраненная копия"
+		nosnippet - запрет на вывод в поисковой выдачепод название станицы фрагмента текста, который описывает ее содержимое
+	-->
+
+	<!--Автор страницы-->
+	<meta name="Author" content="Author">
+	<!--Авторские права-->
+	<meta name="Copyright" content="Copyright">
+	<!--Адрес автора-->
+	<meta name="Adress" content="Adress">
+
+	<!--Редирект страницы-->
+	<!--Задержка в секундах; url = Адрес страницы/сайта-->
+	<!-- <meta http-equiv="refresh" content="5; url=index.html"> -->
+
+	<!--мета теги для соц. сетей-->
+	<!-- <meta name="" content="">
+	<meta name="" content="">
+	<meta name="" content="">
+	<meta name="" content="">
+	<meta name="" content="">
+	<meta name="" content="">
+	<meta name="" content="">
+	<meta name="" content="">
+	<meta name="" content=""> -->
+
+	<!--подключение слайдера-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+	<!--Подключение стилей-->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!--Заголовок страницы в браузере-->
+	<title>Отправка данных через форму</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+
+		</header>
+		<main class="page">
+			<div class="form__container _container">
+				<form action="#" id="form" class="form__body">
+					<div class="form__title">Отправка данных на почту</div>
+					<div class="form__item">
+						<label for="formName" class="form__label">Имя*</label>
+						<input autocomplete="off" type="formName" data-error="Error" name="name" id="formName"
+							placeholder="" class="form__input _req">
+					</div>
+					<div class="form__item">
+						<label for="formEmail" class="form__label">E-mail*</label>
+						<input autocomplete="off" type="nameEmail" data-error="Error" name="email" id="formName"
+							placeholder="" class="form__input _req _email">
+					</div>
+					<div class="form__item">
+						<div class="form__label">Левша или правша:</div>
+						<div class="form__options options">
+							<div class="options__item">
+								<input id="formRightHanded" checked value="right" type="radio" name="hand"
+									class="options__input">
+								<label for="formRightHanded" class="options__label"><span>Правша</span></label>
+							</div>
+							<div class="options__item">
+								<input id="formLeftHanded" value="left" type="radio" name="hand"
+									class="options__input">
+								<label for="formLeftHanded" class="options__label"><span>Левша</span></label>
+							</div>
+						</div>
+					</div>
+					<div class="form__item">
+						<label for="formMessage" class="form__label">Сообщение:</label>
+						<textarea name="message" id="formMassage"></textarea>
+					</div>
+					<div class="form__item">
+						<div class="form__label">Возраст:</div>
+						<select name="age" id="" class="select">
+							<option value="от 18 до 25" selected>Молодой</option>
+							<option value="от 25 до 45">Старый</option>
+							<option value="от 45">Супер стар</option>
+						</select>
+					</div>
+					<div class="form__item">
+						<h2 class="form__label"></h2>
+						<div class="file">
+							<div class="file__item">
+								<input id="formImage" accept=".jpg, .png, .gif" type="file" name="image"
+									class="file__input">
+								<div class="file__buttom">Выбрать</div>
+							</div>
+							<div id="formPreview" class="file__preview">
+
+							</div>
+						</div>
+					</div>
+					<div class="form__item">
+						<div class="checkbox">
+							<input id="formAgreement" checked type="checkbox" name="agreement"
+								class="checkbox__input _req">
+							<label for="formAgreement" class="checkbox__label"><span>
+									Я даю своё согласие на
+									обработку
+									персональных данных в соответствии с
+									<a href="#">Условиями</a>*</span></label>
+						</div>
+					</div>
+					<button type="submit" class="form__button">
+						Отправить
+					</button>
+				</form>
+			</div>
+		</main>
+		<footer class="footer">
+
+		</footer>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+		<script src="js/script.js"></script>
+	</div>
+</body>
+
+</html>
